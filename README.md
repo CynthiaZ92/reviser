@@ -1,3 +1,5 @@
+Tips: Using eclipse will make the build more convenient and easier.
+
 Reviser
 =======
 
