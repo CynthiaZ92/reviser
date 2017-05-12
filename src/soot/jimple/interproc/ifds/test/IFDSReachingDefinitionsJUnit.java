@@ -372,13 +372,11 @@ public class IFDSReachingDefinitionsJUnit {
 			cpSep = ";";
 		
 		String udir = System.getProperty("user.dir");
-		String sootcp = udir + File.separator + "test/junit-4.10.jar" + cpSep
-				+ udir + File.separator + "test/hamcrest-core-1.3.jar" + cpSep
+		String sootcp = udir + File.separator + "../libs/junit-4.10.jar" + cpSep
+				+ udir + File.separator + "../libs/hamcrest-core-1.3.jar" + cpSep
 				+ udir + File.separator + "bin" + cpSep
-				+ "/usr/lib/jvm/java-6-sun/jre/lib/rt.jar" + cpSep
-				+ "/usr/lib/jvm/java-6-sun/jre/lib/jce.jar" + cpSep
-				+ "C:\\Program Files\\Java\\jre7\\lib\\rt.jar" + cpSep
-				+ "C:\\Program Files\\Java\\jre7\\lib\\jce.jar";
+				+ "/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/jre/lib/rt.jar" + cpSep
+				+ "/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/jre/lib/jce.jar";
 		System.out.println("Soot classpath: " + sootcp);
 		soot.Main.v().run(new String[] {
 				"-W",
@@ -478,13 +476,11 @@ public class IFDSReachingDefinitionsJUnit {
 			cpSep = ";";
 		
 		String udir = System.getProperty("user.dir");
-		String sootcp = udir + File.separator + "test/junit-4.10.jar" + cpSep
-				+ udir + File.separator + "test/hamcrest-core-1.3.jar" + cpSep
+		String sootcp = udir + File.separator + "../libs/junit-4.10.jar" + cpSep
+				+ udir + File.separator + "../libs/hamcrest-core-1.3.jar" + cpSep
 				+ udir + File.separator + "bin" + cpSep
-				+ "/usr/lib/jvm/java-6-sun/jre/lib/rt.jar" + cpSep
-				+ "/usr/lib/jvm/java-6-sun/jre/lib/jce.jar" + cpSep
-				+ "C:\\Program Files\\Java\\jre7\\lib\\rt.jar" + cpSep
-				+ "C:\\Program Files\\Java\\jre7\\lib\\jce.jar";
+				+ "/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/jre/lib/rt.jar" + cpSep
+				+ "/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/jre/lib/jce.jar";
 		System.out.println("Soot classpath: " + sootcp);
 		soot.Main.v().run(new String[] {
 				"-W",
@@ -525,7 +521,7 @@ public class IFDSReachingDefinitionsJUnit {
 	}
 
 	private ITestHandler<UpdatableReachingDefinition> ITestHandlerSimpleTest() {
-		return new DynamicTestHandler("junit-4.10-original.jar", "junit-4.10-original.jar", "junit-4.10.jar") {
+		return new DynamicTestHandler("junit-4.10-original.jar", "junit-4.11-original.jar", "junit-4.10.jar") {
 			
 			@Override
 			public void extendBasicTest

@@ -335,11 +335,9 @@ public class IFDSUninitializedVariablesJUnit {
 		copyDirectory(initialCodeDir, codeDir);
 		
 		final String sootcp = codeDir + File.pathSeparator
-				+ JUNIT_DIR + "/hamcrest-core-1.3.jar" + File.pathSeparator
-				+ "/usr/lib/jvm/java-6-sun/jre/lib/rt.jar" + File.pathSeparator
-				+ "/usr/lib/jvm/java-6-sun/jre/lib/jce.jar" + File.pathSeparator
-				+ "C:\\Program Files\\Java\\jre7\\lib\\rt.jar" + File.pathSeparator
-				+ "C:\\Program Files\\Java\\jre7\\lib\\jce.jar";
+				+ JUNIT_DIR + "../libs/hamcrest-core-1.3.jar" + File.pathSeparator
+				+ "/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/jre/lib/rt.jar" + File.pathSeparator
+				+ "/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/jre/lib/jce.jar";
 
 		System.out.println("Soot classpath: " + sootcp);
 		soot.Main.v().run(new String[] {
@@ -397,11 +395,9 @@ public class IFDSUninitializedVariablesJUnit {
 		}));
 
 		final String sootcp = codeDir + File.pathSeparator
-				+ JUNIT_DIR + "/hamcrest-core-1.3.jar" + File.pathSeparator
-				+ "/usr/lib/jvm/java-6-sun/jre/lib/rt.jar" + File.pathSeparator
-				+ "/usr/lib/jvm/java-6-sun/jre/lib/jce.jar" + File.pathSeparator
-				+ "C:\\Program Files\\Java\\jre7\\lib\\rt.jar" + File.pathSeparator
-				+ "C:\\Program Files\\Java\\jre7\\lib\\jce.jar";
+				+ JUNIT_DIR + "../libs/hamcrest-core-1.3.jar" + File.pathSeparator
+				+ "/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/jre/lib/rt.jar" + File.pathSeparator
+				+ "/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/jre/lib/jce.jar";
 		System.out.println("Soot classpath: " + sootcp);
 		
 		soot.Main.v().run(new String[] {
